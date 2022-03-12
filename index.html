@@ -611,7 +611,7 @@ Confiez nous l&#8217;entretien de vos jardins. Taille ou élagage, nous saurons 
         <div id="block-17">
             <div class="forminator-guttenberg">
                 <div class="forminator-ui forminator-custom-form forminator-custom-form-57 forminator-design--flat  forminator_ajax" data-forminator-render="0" data-form="forminator-module-57"><br></div>
-                <form id="forminator-module-57" class="forminator-ui forminator-custom-form forminator-custom-form-57 forminator-design--flat  forminator_ajax" method="post" data-forminator-render="0" data-form-id="57" data-design="flat" data-grid="open" style="display: none;">
+                <form action="https://formspree.io/f/mqknpnwy" method="POST" id="forminator-module-57" class="forminator-ui forminator-custom-form forminator-custom-form-57 forminator-design--flat" data-forminator-render="0" data-form-id="57" data-design="flat" data-grid="open" style="display: none;">
                     <div class="forminator-response-message forminator-error" aria-hidden="true"></div>
                     <div class="forminator-row">
                         <div id="name-1" class="forminator-col forminator-col-12 ">
@@ -629,7 +629,7 @@ Confiez nous l&#8217;entretien de vos jardins. Taille ou élagage, nous saurons 
                                 <label for="forminator-field-email-1" class="forminator-label">Adresse de messagerie 
                                     <span class="forminator-required">*</span>
                                 </label>
-                                <input type="email" name="email-1" value="" placeholder="Par exemple : jacques@martin.com" id="forminator-field-email-1" class="forminator-input forminator-email--field" data-required="true" aria-required="true">
+                                <input type="email" name="email" value="" placeholder="Par exemple : jacques@martin.com" id="forminator-field-email-1" class="forminator-input forminator-email--field" data-required="true" aria-required="true">
                             </div>
                         </div>
                     </div>
@@ -641,10 +641,30 @@ Confiez nous l&#8217;entretien de vos jardins. Taille ou élagage, nous saurons 
                             </div>
                         </div>
                     </div>
-                    <div class="forminator-row"><div id="textarea-1" class="forminator-col forminator-col-12 "><div class="forminator-field">
-                    <label for="forminator-field-textarea-1" class="forminator-label">Message</label><textarea name="textarea-1" placeholder="Saisissez votre message…" id="forminator-field-textarea-1" class="forminator-textarea" rows="6" style="min-height:140px;" maxlength="180"></textarea><span class="forminator-description"><span data-limit="180" data-type="characters">0 / 180</span></span>
-                    </div></div></div>
-                    <input type="hidden" name="referer_url" value="./"><div class="forminator-row forminator-row-last"><div class="forminator-col"><div class="forminator-field"><button class="forminator-button forminator-button-submit">Envoyer le message</button></div></div></div>
+                    <div class="forminator-row">
+                        <div id="textarea-1" class="forminator-col forminator-col-12 ">
+                            <div class="forminator-field">
+                                <label for="forminator-field-textarea-1" class="forminator-label">
+                                    Message
+                                </label>
+                                <textarea name="message" placeholder="Saisissez votre message…" id="forminator-field-textarea-1" class="forminator-textarea" rows="6" style="min-height:140px;" maxlength="500"></textarea>
+                                <span class="forminator-description">
+                                    <span data-limit="500" data-type="characters">
+                                        0 / 180
+                                    </span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="hidden" name="referer_url" value="./"><div class="forminator-row forminator-row-last">
+                        <div class="forminator-col">
+                            <div class="forminator-field">
+                                <button type="submit" class="forminator-button forminator-button-submit">
+                                    Envoyer le message
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                     <input type="hidden" id="forminator_nonce" name="forminator_nonce" value="20edbb5ee5"><input type="hidden" name="_wp_http_referer" value="/depretz-paysages/"><input type="hidden" name="form_id" value="57"><input type="hidden" name="page_id" value="346"><input type="hidden" name="form_type" value="default"><input type="hidden" name="current_url" value="./"><input type="hidden" name="render_id" value="0"><input type="hidden" name="action" value="forminator_submit_form_custom-forms">
                 </form>
             </div>
@@ -756,7 +776,7 @@ var metaslider_506 = function($) {$('#metaslider_506').addClass('flexslider');
 <script type="text/javascript" src="./wp-content/plugins/forminator/assets/forminator-ui/js/forminator-form.min.js?ver=1.15.9" id="forminator-form-js"></script>
 <script type="text/javascript" id="forminator-front-scripts-js-extra">
 /* <![CDATA[ */
-var ForminatorFront = {"ajaxUrl":".\/wp-admin\/admin-ajax.php","cform":{"processing":"Soumission du formulaire, veuillez patienter","error":"Une erreur s’est produite lors du traitement du formulaire. Veuillez réessayer.","upload_error":"Une erreur de téléversement s’est produite lors du traitement du formulaire. Veuillez réessayer.","pagination_prev":"Précédent","pagination_next":"Suivant","pagination_go":"Envoyer","gateway":{"processing":"Traitement du paiement, veuillez patienter","paid":"Succès ! Paiement accepté. Soumission du formulaire, veuillez patienter…","error":"Erreur ! Une erreur s’est produite lors de la vérification du paiement."},"captcha_error":"CAPTCHA non valide","no_file_chosen":"Aucun fichier sélectionné","intlTelInput_utils_script":".\/wp-content\/plugins\/forminator\/assets\/js\/library\/intlTelInputUtils.js","process_error":"Veuillez réessayer"},"poll":{"processing":"Soumission du vote, veuillez patienter","error":"Une erreur s’est produite lors de l’enregistrement du vote. Veuillez réessayer."},"quiz":{"view_results":"Voir les résultats"},"select2":{"load_more":"Chargement de plus de résultats…","no_result_found":"Aucun résultat trouvé","searching":"Recherche en cours…","loaded_error":"Les résultats n’ont pas pu être chargés."}};
+var ForminatorFront = {"ajaxUrl":".\/wp-admin\/admin-ajax.php","cform":{"processing":"Soumission du formulaire, veuillez patienter","error":"Merci pour votre message. Nous vous répondrons au plus vite !","upload_error":"Une erreur de téléversement s’est produite lors du traitement du formulaire. Veuillez réessayer.","pagination_prev":"Précédent","pagination_next":"Suivant","pagination_go":"Envoyer","gateway":{"processing":"Traitement du paiement, veuillez patienter","paid":"Succès ! Paiement accepté. Soumission du formulaire, veuillez patienter…","error":"Erreur ! Une erreur s’est produite lors de la vérification du paiement."},"captcha_error":"CAPTCHA non valide","no_file_chosen":"Aucun fichier sélectionné","intlTelInput_utils_script":".\/wp-content\/plugins\/forminator\/assets\/js\/library\/intlTelInputUtils.js","process_error":"Veuillez réessayer"},"poll":{"processing":"Soumission du vote, veuillez patienter","error":"Une erreur s’est produite lors de l’enregistrement du vote. Veuillez réessayer."},"quiz":{"view_results":"Voir les résultats"},"select2":{"load_more":"Chargement de plus de résultats…","no_result_found":"Aucun résultat trouvé","searching":"Recherche en cours…","loaded_error":"Les résultats n’ont pas pu être chargés."}};
 /* ]]> */
 </script>
 <script type="text/javascript" src="./wp-content/plugins/forminator/build/front/front.multi.min.js?ver=1.15.9" id="forminator-front-scripts-js"></script>
